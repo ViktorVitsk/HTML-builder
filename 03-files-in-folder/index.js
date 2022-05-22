@@ -6,7 +6,7 @@ showFiles(path.join(__dirname, 'secret-folder'));
 
 async function showFiles(p) {
   try {
-    const files = await readdir(p, 'utf-8', true);
+    const files = await readdir(p);
 
     for (const file of files) {
       const currentPath = path.join(p, file);
