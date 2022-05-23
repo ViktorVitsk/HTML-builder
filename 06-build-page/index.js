@@ -41,7 +41,6 @@ async function createPackage() {
   await fs.promises.rm(DIR_FOR_COPY, { force: true, recursive: true });
   await fs.promises.mkdir(DIR_FOR_COPY, { force: true, recursive: true });
   await fs.promises.mkdir(COPY_ASSETS, { force: true, recursive: true });
-  // await fs.promises.mkdir(COPY_STYLES, { force: true, recursive: true });
   await fs.writeFile(COPY_STYLES, '', err => {
     if (err)
       console.log(err.message);

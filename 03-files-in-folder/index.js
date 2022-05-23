@@ -23,9 +23,6 @@ async function showFiles(p) {
             }\textname: ${path.extname(currentPath)}\tsize: ${(stats.size/1024).toFixed(3)} kb`
           );
         } 
-        // else if (stats.isDirectory()) {
-        //   showFiles(currentPath);
-        // }
       });
     }
   } catch (err) {
